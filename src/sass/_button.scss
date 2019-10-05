@@ -1,0 +1,40 @@
+.button {
+  @include setPrefix(appearance, none);
+  background: none;
+  border-radius: none;
+  border: 2px solid;
+  border-color: $green;
+  color: $green;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.90em 1.2em;
+  letter-spacing: 1px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  @include setPrefix(transition, all 0.35s ease-in-out);
+
+  &:hover {
+    background: $green;
+    color: white;
+  }
+
+  &.alt {
+    border-color: inherit;
+    color: inherit;
+
+    &:hover {
+      background: white;
+      color: $green;
+    }
+  }
+
+  &.fit {
+    width: 100%;
+  }
+
+  &.small {
+    font-size: 0.8em;
+  }
+}

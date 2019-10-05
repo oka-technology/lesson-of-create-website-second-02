@@ -1,0 +1,35 @@
+%char {
+  display: block;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 1.6em;
+  font-weight: 300;
+}
+
+#banner {
+  padding: 6em 0em 3em 0em;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+
+  .container {
+    padding: 0em 8em;
+  }
+
+  h2 {
+    display: inline-block;
+    padding: 0.50em 0.30em;
+    background: $green;
+    font-size: 3em;
+    font-weight: 400;
+  }
+
+  p {
+    @extend %char;
+  }
+
+  span {
+    @extend %char;
+    padding: 1em 0em;
+  }
+}

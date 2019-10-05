@@ -1,0 +1,32 @@
+%major {
+  text-align: left;
+}
+
+#main {
+  padding: 4em 0;
+
+  #content {
+    .major {
+      @extend %major;
+    }
+  }
+
+  #sidebar {
+    section {
+      margin-top: 4em;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    .major {
+      @extend %major;
+      padding-bottom: 2em;
+
+      h2 {
+        font-size: 1.8em;
+      }
+    }
+  }
+}

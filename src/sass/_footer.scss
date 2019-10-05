@@ -1,0 +1,28 @@
+#footer {
+  padding: 6em 0 2em 0;
+  text-align: center;
+  color: white;
+
+  hr {
+    border-bottom: 1px solid;
+    border-color: inherit;
+    opacity: .05;
+  }
+
+  .major {
+
+    h2 {
+      color: inherit;
+    }
+
+    .byline {
+      color: inherit;
+      opacity: .4;
+    }
+  }
+
+  .copyright {
+    margin-top: 3em;
+    text-align: center;
+  }
+}
